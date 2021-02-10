@@ -21,9 +21,9 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
 
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/%D0%A1%20%D0%A2%D0%B8%D0%BC%D0%BE%D0%B9.jpg?alt=media&token=15ab4a7b-b2b8-4ff4-b9eb-d4380fc67c8a").into(image1);
-
-
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/animals%2Fcow_2.png?alt=media&token=89ba4b7f-cac5-413f-9dc3-f5b2131c598a").into(image1);
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/food%2Fcow_and_sheep_food.png?alt=media&token=0b0652b4-0e6f-44f1-94eb-635dd3525321").into(image2);
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/footprints%2Fcow_foot1.png?alt=media&token=0da481b1-737a-41e3-981d-ef68a2ba06f7").into(image3);
     }
 
     fun rideOnMe(view: View) {
