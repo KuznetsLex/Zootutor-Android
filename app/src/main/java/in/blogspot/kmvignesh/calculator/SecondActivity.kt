@@ -9,6 +9,7 @@ import android.view.View
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_second.*
 
+
 class SecondActivity : AppCompatActivity() {
 
     //companion object{
@@ -19,6 +20,33 @@ class SecondActivity : AppCompatActivity() {
         getWindow().setBackgroundDrawableResource(R.drawable.territoria_4);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+        //radioButton1 = findViewById(R.id.radioButton1) as RadioButton
+
+
+
+            radioGroup.setOnCheckedChangeListener { _, checkedId ->
+                if(checkedId ==R.id.radioButton1) {
+
+                    image3.visibility = (View.VISIBLE)
+                    image2.visibility = (View.GONE)
+                    image4.visibility = (View.GONE)
+                }
+                else if(checkedId ==R.id.radioButton2) {
+
+                    image2.visibility = (View.VISIBLE)
+                    image3.visibility = (View.GONE)
+                    image4.visibility = (View.GONE)
+                }
+                else if(checkedId ==R.id.radioButton3) {
+
+                    image4.visibility = (View.VISIBLE)
+                    image2.visibility = (View.GONE)
+                    image3.visibility = (View.GONE)
+                }
+            }
+
+
+
 
 
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/animals%2Fcow_2.png?alt=media&token=89ba4b7f-cac5-413f-9dc3-f5b2131c598a").into(image1);
@@ -30,4 +58,7 @@ class SecondActivity : AppCompatActivity() {
         val rideIntent = Intent(this, MainActivity::class.java)
         startActivity(rideIntent)
     }
+
+
+
 }
