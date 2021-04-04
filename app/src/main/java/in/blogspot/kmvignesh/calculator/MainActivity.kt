@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         koza.setOnClickListener {
-            var resID = getResources().getIdentifier("this_cow", "raw", getPackageName())
+            var resID = getResources().getIdentifier("this_goat", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
             val randomIntent = Intent(this, goat::class.java)
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                }
 
         krolik.setOnClickListener {
-            var resID = getResources().getIdentifier("this_cow", "raw", getPackageName())
+            var resID = getResources().getIdentifier("this_rabbit", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
             val randomIntent = Intent(this, rabbit::class.java)
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fvopros.png?alt=media&token=87701bbc-0ed0-4948-8b23-0f4f8ca16139").into(vopros);
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Farrow.png?alt=media&token=9a717b8e-6fe6-4c31-93cc-34226ae9339c").into(arrow);
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fexam.png?alt=media&token=dabedfa3-91fb-4326-bf84-886e212a611a").into(exam);
+        //Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fexam.png?alt=media&token=dabedfa3-91fb-4326-bf84-886e212a611a").into(exam);
     }
 
 

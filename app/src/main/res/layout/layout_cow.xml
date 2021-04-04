@@ -18,7 +18,7 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="1105dp">
+            android:layout_height="905dp">
 
 
             <LinearLayout
@@ -33,14 +33,14 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <android.support.constraint.ConstraintLayout
-                    android:layout_width="538dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:layout_editor_absoluteX="1dp">
 
                     <ImageView
                         android:id="@+id/arrow"
                         android:layout_width="124dp"
-                        android:layout_height="100dp"
+                        android:layout_height="match_parent"
 
                         android:layout_marginStart="10dp"
 
@@ -51,19 +51,9 @@
                         app:layout_constraintVertical_bias="0.514" />
 
                     <ImageView
-                        android:id="@+id/exam"
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:onClick="rideOnMe"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/vopros"
-                        app:layout_constraintStart_toEndOf="@+id/arrow"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
                         android:id="@+id/vopros"
                         android:layout_width="130dp"
-                        android:layout_height="130dp"
+                        android:layout_height="match_parent"
 
                         android:layout_marginEnd="10dp"
 
@@ -79,18 +69,15 @@
                 android:id="@+id/food"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
 
 
                 android:visibility="gone"
 
-                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintBottom_toTopOf="@+id/right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                 app:layout_constraintVertical_bias="0.516" />
 
@@ -99,35 +86,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
 
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
 
-
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:visibility="gone"
 
-                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintBottom_toTopOf="@+id/right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                 app:layout_constraintVertical_bias="0.516" />
+
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
 
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
                 android:visibility="visible"
-
-
-                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintBottom_toTopOf="@+id/right"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="1.0" />
 
             <ImageView
                 android:id="@+id/soundpic"
@@ -135,72 +119,87 @@
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
 
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
 
 
                 android:visibility="gone"
 
-                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintBottom_toTopOf="@+id/right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                 app:layout_constraintVertical_bias="0.516" />
 
-            <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginBottom="156dp"
-                android:background="#ffffff"
-                android:orientation="horizontal"
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="300dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="-3dp">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPager" />
 
-                <RadioButton
-                    android:id="@+id/radioFace"
-                    android:layout_width="115dp"
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/right">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/face"
-                    android:button="@drawable/space"
-                    tools:layout_editor_absoluteX="7dp"
-                    tools:layout_editor_absoluteY="928dp" />
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteY="140dp">
 
-                <RadioButton
-                    android:id="@+id/radioFoot"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/foot"
-                    android:button="@drawable/space"
-                    tools:layout_editor_absoluteX="7dp"
-                    tools:layout_editor_absoluteY="928dp" />
+                    <RadioButton
+                        android:id="@+id/radioFace"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/face"
+                        android:button="@drawable/space" />
 
-                <RadioButton
-                    android:id="@+id/radioFood"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/food"
-                    android:button="@drawable/space"
-                    tools:layout_editor_absoluteX="367dp"
-                    tools:layout_editor_absoluteY="928dp" />
+                    <RadioButton
+                        android:id="@+id/radioFoot"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/foot"
+                        android:button="@drawable/space" />
 
-                <RadioButton
-                    android:id="@+id/radioSound"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/sound"
-                    android:button="@drawable/space" />
+                    <RadioButton
+                        android:id="@+id/radioFood"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/food"
+                        android:button="@drawable/space" />
 
-            </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/radioSound"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sound"
+                        android:button="@drawable/space" />
+
+                </RadioGroup>
+
+            </android.support.constraint.ConstraintLayout>
 
         </android.support.constraint.ConstraintLayout>
 

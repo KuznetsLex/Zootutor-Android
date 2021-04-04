@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zootutor-eugen.iml" filepath="$PROJECT_DIR$/.idea/modules/Zootutor-eugen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Zootutor-eugen.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Zootutor-eugen.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zootutor-eugen_1_lesha.iml" filepath="$PROJECT_DIR$/.idea/modules/Zootutor-eugen_1_lesha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Zootutor-eugen_1_lesha.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Zootutor-eugen_1_lesha.app.iml" />
     </modules>
   </component>
 </project>

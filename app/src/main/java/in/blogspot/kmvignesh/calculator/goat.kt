@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.bumptech.glide.Glide
 import com.codinginflow.picassoimagesliderexample.ViewPagerAdapter
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.layout_cow.*
 
 
@@ -43,19 +44,19 @@ class goat : AppCompatActivity() {
         }
 
         food.setOnClickListener {
-            var resID = getResources().getIdentifier("cow_food", "raw", getPackageName())
+            var resID = getResources().getIdentifier("goat_food", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }
 
         foot.setOnClickListener {
-            var resID = getResources().getIdentifier("cow_footprint", "raw", getPackageName())
+            var resID = getResources().getIdentifier("goat_footprint", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }
 
         soundpic.setOnClickListener {
-            var resID = getResources().getIdentifier("cow", "raw", getPackageName())
+            var resID = getResources().getIdentifier("goat", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }
@@ -99,12 +100,14 @@ class goat : AppCompatActivity() {
 
 
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/food%2Fcow_and_sheep_food.png?alt=media&token=0b0652b4-0e6f-44f1-94eb-635dd3525321").into(food);
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/footprints%2Fcow_foot1.jpg?alt=media&token=d7ef1ba6-714e-4691-9889-505671bb4438").into(foot);
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/soundpick%2FCow__soundpic.png?alt=media&token=af102aeb-2fbe-40d2-82d7-1418bed2c886").into(soundpic);
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/footprints%2Fpig_foot.jpg?alt=media&token=3c487624-aac3-474e-9d92-b21583116072").into(foot);
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/footprints%2FGoat__soundpic.png?alt=media&token=3e629ba7-206d-4936-953b-99332aff32a4").into(soundpic);
 
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fvopros.png?alt=media&token=87701bbc-0ed0-4948-8b23-0f4f8ca16139").into(vopros);
         Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Farrow.png?alt=media&token=9a717b8e-6fe6-4c31-93cc-34226ae9339c").into(arrow);
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fexam.png?alt=media&token=dabedfa3-91fb-4326-bf84-886e212a611a").into(exam);
+        //Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fexam.png?alt=media&token=0ced259f-6630-4f36-a647-b07e71704d9f").into(exam);
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fleft.png?alt=media&token=0c6e6294-0f43-47db-ad38-fcb226d7b321").fit().centerCrop().into(left)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/zoobase-ddfc3.appspot.com/o/controls%2Fright.png?alt=media&token=83571402-29e3-4e71-b55f-dbf266cf50e3").fit().centerCrop().into(right)
     }
 
     fun rideOnMe(view: View) {

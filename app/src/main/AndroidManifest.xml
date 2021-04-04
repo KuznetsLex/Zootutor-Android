@@ -23,9 +23,22 @@
         <activity android:name="com.tutorialwing.scrollview.pig" />
         <activity android:name="com.tutorialwing.scrollview.rabbit" />
         <activity android:name="com.tutorialwing.scrollview.sheep" />
-        <activity android:name=".MainActivity">
 
-        </activity>
+        <activity android:name="com.tutorialwing.scrollview.chinch" />
+        <activity android:name="com.tutorialwing.scrollview.bee" />
+        <activity android:name="com.tutorialwing.scrollview.butterfly" />
+        <activity android:name="com.tutorialwing.scrollview.ladybug" />
+        <activity android:name="com.tutorialwing.scrollview.spider" />
+        <activity android:name="com.tutorialwing.scrollview.dragonfly" />
+
+        <activity android:name="com.tutorialwing.scrollview.chicken" />
+        <activity android:name="com.tutorialwing.scrollview.duck" />
+        <activity android:name="com.tutorialwing.scrollview.goos" />
+        <activity android:name="com.tutorialwing.scrollview.pheasant" />
+        <activity android:name="com.tutorialwing.scrollview.turkey" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity_2"/>
+        <activity android:name=".MainActivity_3"/>
     </application>
 
 </manifest>
