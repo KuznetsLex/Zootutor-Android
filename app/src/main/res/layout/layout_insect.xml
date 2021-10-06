@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<!--<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +7,15 @@
     android:layout_height="match_parent"
     android:background="#e2cc54"
 
-    >
+    >-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2cc54"
+    android:baselineAligned="false"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,13 +26,13 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="905dp">
+            android:layout_height="match_parent">
 
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="124dp"
+                android:layout_height="75dp"
                 android:background="#ffffff"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +90,7 @@
                 app:layout_constraintVertical_bias="0.516" />
 
             <ImageView
-                android:id="@+id/vopros1"
+                android:id="@+id/foot"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
 
@@ -108,11 +116,28 @@
                 android:visibility="visible"
                 app:layout_constraintBottom_toTopOf="@+id/right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                 app:layout_constraintVertical_bias="1.0" />
 
+            <ImageView
+                android:id="@+id/vopros1"
+
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+
+                android:visibility="gone"
+
+                app:layout_constraintBottom_toTopOf="@+id/right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.516" />
             <ImageView
                 android:id="@+id/vopros2"
 
@@ -136,30 +161,29 @@
                 android:layout_width="140dp"
                 android:layout_height="100dp"
 
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginBottom="300dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+                app:layout_constraintTop_toBottomOf="@+id/viewPager"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
                 android:id="@+id/right"
                 android:layout_width="140dp"
                 android:layout_height="100dp"
 
-                android:layout_marginEnd="40dp"
-                android:layout_marginBottom="300dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:layout_marginTop="360dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.616"
+                app:layout_constraintStart_toEndOf="@+id/left"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/right">
+                app:layout_constraintBottom_toBottomOf="parent">
 
                 <RadioGroup
                     android:id="@+id/radioGroup"
@@ -206,4 +230,5 @@
 
     </LinearLayout>
 
-</ScrollView>
+    <!--</ScrollView>-->
+</LinearLayout>
